@@ -1,0 +1,58 @@
+<html ng-app="demo">
+	<head>
+		<link rel="stylesheet" type="text/css" href="main.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<h1>Weather Report</h1>
+			</header>
+			<main ng-controller="weatherController">
+				  <form ng-submit="getId(selectZips)">
+				  		<label for="selectZips"> Select zip code: 
+							 <select 
+							 id="selectZips" 
+							 name='selectZips'
+							 ng-model='selectZips'>
+							 	<option value="">Select</option>
+								<option value="524901">524901</option>
+								<option value="703448">703448</option>
+								<option value="2643743">2643743</option>
+							</select> 
+							<input type="submit" id="submit" value="Submit" />
+				  		</label>
+					  <div>
+						
+					  </div>
+				  </form>
+				  <div class="weatherreport-table" ng-if="weatherData != ''">
+				  		<div class="weather_details" ng-repeat="list in weatherData.list">
+							<h2>City: {{list.name}}</h2>
+							<table class="weather_details_table" width="100%" border="1" cellpadding="0" cellspacing="0" summary="Weather details">
+								<thead>
+									<tr align="left">
+										<th width="50%">Description</th>
+										<th>Main</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr ng-repeat="weather in list.weather">
+										<td>{{weather.description}}</td>
+										<td>{{weather.main}}</td>
+									</tr>
+								</tbody>
+							</table>
+				  		</div>
+				  </div>
+			</main>
+			<footer>
+				&copy; copy right or some thing else goes here....
+			</footer>
+		</div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script type="text/javascript" src="weatherController.js"></script>
+		<script type="text/javascript" src="weatherService.js"></script>
+	</body>
+</html>
+
+

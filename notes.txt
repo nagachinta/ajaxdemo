@@ -1,0 +1,10 @@
+from Tejasvi Sridhar to Everyone:
+hi Suneel I have made you as Host
+from Tejasvi Sridhar to Everyone:
+i will not dial in to the call
+from Suneel Nulu to Everyone:
+http://api.openweathermap.org/data/2.5/group?id=524901,703448,2643743&units=metric&appid=2de143494c0b295cca9337e1e96b00e0
+from Suneel Nulu to Everyone:
+pbasaval@cisco.com
+from Suneel Nulu to Everyone:
+sunulu@cisco.com

@@ -1,0 +1,45 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	font-family: arial;
+	font-size: 16px;
+}
+.wrapper {
+	width: 800px;
+	margin: auto;
+	background: #ddd;
+}
+header {
+	width: 100%;
+	height: 75px;
+	font-size: 100%;
+	padding: 10px 0;
+	border-bottom: 1px solid #000;
+}
+h1 {
+	font-size: 150%;
+	padding: 10px;
+}
+main {
+	padding: 10px;
+}
+.weather_details {
+	padding: 10px 0;
+}
+.weather_details h2 {
+	padding: 10px 0;
+}
+.weather_details_table {
+	width: 100%;
+}
+.weather_details_table th, .weather_details_table td {
+	padding: 5px;
+}
+footer {
+	height: 20px;
+	font-size: 75%;
+	padding: 10px;
+	border-top: 1px solid #000;
+}
